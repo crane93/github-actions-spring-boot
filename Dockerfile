@@ -7,4 +7,3 @@ RUN apt update && apt upgrade -y && apt install -y curl gnupg sudo git vim wget 
 
 WORKDIR /demo/home
 COPY . /demo/home
-RUN ./gradlew test

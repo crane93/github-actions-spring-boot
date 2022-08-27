@@ -8,6 +8,9 @@ services:
     working_dir: '/demo/home'
     volumes:
       - .:/demo/home:cached
-    entrypoint: /bin/bash
     ports: 
       - "8080:8080"
+    entrypoint: |
+      bash -e -c "
+      ./gradlew test
+      " 
