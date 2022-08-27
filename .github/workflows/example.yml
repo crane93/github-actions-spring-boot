@@ -3,7 +3,7 @@ name: Testing Spring Boot Code On Github Actions
 on:
   push:
     branches:
-      - github-actions-spring-boot
+      - main
 
 jobs:
   test:
