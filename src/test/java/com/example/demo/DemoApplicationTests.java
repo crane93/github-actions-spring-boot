@@ -9,7 +9,7 @@ class DemoApplicationTests {
 
 	@Test
 	void testCodeOnGithubActions() {
-		assertEquals(1, 1);
+		assertEquals(1, 0);
 	}
 
 }
