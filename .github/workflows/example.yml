@@ -12,6 +12,6 @@ jobs:
       - uses: actions/checkout@v2 #uses：actionsを使う場合
       - run: docker-compose up --abort-on-container-exit
       - if: success()
-        run: test success
+        run: echo success
       - if: failure()
-        run: test failure
+        run: echo failure
